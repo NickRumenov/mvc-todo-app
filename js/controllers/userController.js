@@ -35,13 +35,12 @@ app.userController = (function () {
             .then(function (success) {
                 sessionStorage['sessionId'] = success._kmd.authtoken;
                 sessionStorage['username'] = success.username;
-                sessionStorage['fullName'] = success.fullName;
                 sessionStorage['userId'] = success._id;
 
                 Sammy(function () {
                     this.trigger('redirectUrl', { url: '#/home/' });
                 });
-            }).done();
+            });
     };
 
     UserController.prototype.logout = function () {

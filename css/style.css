@@ -71,7 +71,7 @@ body {
       text-align: center;
       border-radius: 15px;
       width: 100%; }
-      body #wrapper #container .list-tasks .item {
+      body #wrapper #container .list-tasks li {
         display: inline-block;
         list-style: none;
         border-radius: 10px;
@@ -80,36 +80,35 @@ body {
         width: 12em;
         height: 11em;
         background-color: white; }
-        body #wrapper #container .list-tasks .item a h2 {
+        body #wrapper #container .list-tasks li h2 {
           color: black;
           text-decoration: underline;
           font-size: 1.5em;
           text-align: center;
           background-color: #f5f9af;
           border-radius: 10px 10px 0px 0px; }
-        body #wrapper #container .list-tasks .item a p {
+        body #wrapper #container .list-tasks li #text {
           color: black;
           margin-top: 10px;
-          font-weight: bold;
-          text-decoration: none; }
-        body #wrapper #container .list-tasks .item a .author {
+          font-weight: bold; }
+        body #wrapper #container .list-tasks li .author {
           text-align: left;
           font-size: 1em;
           position: fixed;
           bottom: 1.5em;
           color: black; }
-        body #wrapper #container .list-tasks .item a .deadline {
+        body #wrapper #container .list-tasks li .deadline {
           text-align: right;
           font-size: 1em;
           position: fixed;
           left: 55%;
           bottom: 1.5em;
           color: black; }
-        body #wrapper #container .list-tasks .item .edit {
+        body #wrapper #container .list-tasks li .edit {
           position: fixed;
           left: 0;
           bottom: 0; }
-        body #wrapper #container .list-tasks .item .delete {
+        body #wrapper #container .list-tasks li .delete {
           position: fixed;
           right: 0;
           bottom: 0; }
