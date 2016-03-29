@@ -5,6 +5,7 @@ app.taskViewBag = (function () {
         $.get('templates/office-tasks.html', function (templ) {
             var rendered = Mustache.render(templ, data);
             $(selector).html(rendered);
+            app.pagination.load().pagination('bounceInLeft', 12, 'items');
         })
     }
 
@@ -12,6 +13,7 @@ app.taskViewBag = (function () {
         $.get('templates/my-tasks.html', function (templ) {
             var rendered = Mustache.render(templ, data);
             $(selector).html(rendered);
+            app.pagination.load().pagination('bounceInRight', 12, 'items');
 
             $('.edit').on('click', function () {
                 var taskId = $(this).parent().attr('data-id');

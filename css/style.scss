@@ -63,7 +63,7 @@ $blue-buttons: rgb(0, 111, 255);
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     background: url("../images/wall.jpg");
 
@@ -128,15 +128,16 @@ body {
             #home-page {
                 height: 30em;
 
-                h1 {
+                p, h1{
                     color: white;
                     text-align: center;
+                }
+
+                h1 {
                     font-size: 3em;
                 }
 
                 p {
-                    color: white;
-                    text-align: center;
                     font-size: 2em;
                     color: $yellow-color;
                 }
@@ -146,12 +147,11 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                background-color: cornflowerblue;
+                background-color: rgb(00, 122, 255);
                 box-shadow: 10px 10px 7px rgba(0,0,0,.7);
                 margin: 0 auto;
                 text-align: center;
                 border-radius: 15px;
-                width: 100%;
 
                 li {
                     display: inline-block;
@@ -178,21 +178,21 @@ body {
                         font-weight: bold;
                     }
 
-                    .author {
-                        text-align: left;
+                    .deadline, .author{
                         font-size: 1em;
                         position: fixed;
-                        bottom: 1.5em;
                         color: black;
+                    }
+
+                    .author {
+                        text-align: left;
+                        bottom: 1.5em;
                     }
 
                     .deadline {
                         text-align: right;
-                        font-size: 1em;
-                        position: fixed;
                         left: 55%;
                         bottom: 1.5em;
-                        color: black;
                     }
 
                     .edit {
@@ -206,6 +206,10 @@ body {
                         right: 0;
                         bottom: 0;
                     }
+                }
+                li:hover{
+                    cursor: pointer;
+                    background-color: $yellow-color;
                 }
             }
 
