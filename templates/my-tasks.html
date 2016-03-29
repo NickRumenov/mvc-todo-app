@@ -1,0 +1,21 @@
+﻿<ul id="items" class="list-tasks">
+    {{#tasks}}
+    <li class="item"  id="items" data-id="{{id}}">
+        <a href="#">
+            <h2 id="title">{{title}}</h2>
+            <p id="text">{{text}}</p>
+            <div class="author" title="author">{{author}}</div>
+            <div class="deadline" title="deadline">{{deadline}}</div>
+        </a>
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+    </li>
+    {{/tasks}}
+</ul>
+<div id="pagination" class="pagination-lg"></div>
+<input type="text" placeholder="Enter a page number" />
+<button>jump to this page</button>
+<script>
+    app.pagination.load().pagination('bounceInRight', 12, 'items');
+</script>
+
