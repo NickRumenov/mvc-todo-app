@@ -7,6 +7,7 @@
         var requester = app.requester.load('kid_ZkNf3fEleZ',
             '21764f7b45e64f36bd6b4af20d5940bb', 'https://baas.kinvey.com/');
         var pagination = app.pagination.load();
+        var selectMenu = app.selectMenu.load().selectMenuFunc();
 
         var userViewBag = app.userViewBag.load();
         var homeViewBag = app.homeViewBag.load();

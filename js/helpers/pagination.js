@@ -1,7 +1,8 @@
 ﻿var app = app || {};
 
 app.pagination = (function () {
-    function pagination(style, tasksPerPage, listName) {
+    function paginationFunc(style, tasksPerPage, listName) {
+
         $(document).ready(function () {
 
             $("#pagination").jPages({
@@ -25,7 +26,7 @@ app.pagination = (function () {
     return {
         load: function () {
             return {
-                pagination: pagination,
+                paginationFunc: paginationFunc
             }
         }
     }

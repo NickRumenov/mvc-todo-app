@@ -11,6 +11,7 @@
     <script src="js/libraries/q.js"></script>
     <script src="js/libraries/mustache.min.js"></script>
     <script src="js/libraries/sammy.js"></script>
+    
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <nav id="menu">
             <h2 id="welcome-menu"></h2>
             <ul class="nav-menu" id="ul-menu">
-                <li><a href="#/home/">Home</a></li>
+                <li><a class="active" href="#/home/">Home</a></li>
                 <li><a href="#/my-tasks/">My tasks</a></li>
                 <li><a href="#/office-tasks/">Office tasks</a></li>
                 <li><a href="#/add-task/">Add task</a></li>
@@ -31,6 +32,7 @@
     </div>
     <script src="js/helpers/requester.js"></script>
     <script src="js/helpers/pagination.js"></script>
+    <script src="js/helpers/selectMenu.js"></script>
 
     <script src="js/views/userViewBag.js"></script>
     <script src="js/views/homeViewBag.js"></script>
@@ -44,25 +46,5 @@
     <script src="js/controllers/taskController.js"></script>
 
     <script src="js/app.js"></script>
-    <script>
-	 $(function() {
-      $("<select />").appendTo("nav");
-      $("<option />", {
-         "selected": "selected",
-         "value"   : "",
-         "text"    : "Go to..."
-      }).appendTo("nav select");
-      $("nav a").each(function() {
-       var el = $(this);
-       $("<option />", {
-           "value"   : el.attr("href"),
-           "text"    : el.text()
-       }).appendTo("nav select");
-      });
-      $("nav select").change(function() {
-        window.location = $(this).find("option:selected").val();
-      });
-	 });
-    </script>
 </body>
 </html>

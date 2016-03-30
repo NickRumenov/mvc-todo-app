@@ -70,7 +70,7 @@ body {
         h1 {
             text-align: center;
             font-size: 4em;
-            margin-top: 0.2em;
+            margin: 0.2em;
             color: white;
             text-shadow: 10px 10px 7px rgba(0,0,0,.7);
         }
@@ -96,6 +96,7 @@ body {
                 background-color: $yellow-color;
                 border-radius: 10px;
                 list-style: none;
+
                 a {
                     color: black;
                     text-decoration: none;
@@ -110,7 +111,8 @@ body {
                 cursor: pointer;
                 color: white;
                 background-color: $blue-buttons;
-                a{
+
+                a {
                     color: #fff;
                 }
             }
@@ -178,17 +180,16 @@ body {
                         font-size: 1em;
                         position: fixed;
                         color: black;
+                        bottom: 1.5em;
                     }
 
                     .author {
                         text-align: left;
-                        bottom: 1.5em;
                     }
 
                     .deadline {
                         text-align: right;
                         left: 55%;
-                        bottom: 1.5em;
                     }
 
                     .edit {
@@ -281,6 +282,36 @@ body {
                     @include button-hover-style;
                 }
             }
+        }
+    }
+}
+
+
+
+select{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav select {
+        display: inline-block;
+        height: 2em;
+        border-radius: 10px;
+        background-color: $yellow-color;
+        font-size: 1.2em;
+        font-weight: bold;
+
+        option {
+            font-size: 1em;
+            font-weight: bold;
         }
     }
 }

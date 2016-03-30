@@ -15,7 +15,7 @@ body {
   body header h1 {
     text-align: center;
     font-size: 4em;
-    margin-top: 0.2em;
+    margin: 0.2em;
     color: white;
     text-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7); }
   body #wrapper #welcome-menu {
@@ -92,14 +92,13 @@ body {
         body #wrapper #container .list-tasks li .deadline, body #wrapper #container .list-tasks li .author {
           font-size: 1em;
           position: fixed;
-          color: black; }
-        body #wrapper #container .list-tasks li .author {
-          text-align: left;
+          color: black;
           bottom: 1.5em; }
+        body #wrapper #container .list-tasks li .author {
+          text-align: left; }
         body #wrapper #container .list-tasks li .deadline {
           text-align: right;
-          left: 55%;
-          bottom: 1.5em; }
+          left: 55%; }
         body #wrapper #container .list-tasks li .edit {
           position: fixed;
           left: 0;
@@ -191,4 +190,23 @@ body {
         color: white;
         background: linear-gradient(#006fff, #006fff);
         position: relative; }
+
+select {
+  display: none; }
+
+@media (max-width: 800px) {
+  nav ul {
+    display: none; }
+  nav {
+    text-align: center; }
+  nav select {
+    display: inline-block;
+    height: 2em;
+    border-radius: 10px;
+    background-color: #f5f9af;
+    font-size: 1.2em;
+    font-weight: bold; }
+    nav select option {
+      font-size: 1em;
+      font-weight: bold; } }
 
