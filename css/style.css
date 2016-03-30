@@ -111,7 +111,8 @@ body {
         cursor: pointer;
         background-color: #f5f9af; }
     body #wrapper #container #pagination {
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: flex; }
       body #wrapper #container #pagination a {
         background-color: #f5f9af;
         text-decoration: none;
@@ -195,18 +196,18 @@ select {
   display: none; }
 
 @media (max-width: 800px) {
-  nav ul {
-    display: none; }
   nav {
     text-align: center; }
-  nav select {
-    display: inline-block;
-    height: 2em;
-    border-radius: 10px;
-    background-color: #f5f9af;
-    font-size: 1.2em;
-    font-weight: bold; }
-    nav select option {
-      font-size: 1em;
-      font-weight: bold; } }
+    nav ul {
+      display: none; }
+    nav select {
+      display: inline-block;
+      height: 2em;
+      border-radius: 10px;
+      background-color: #f5f9af;
+      font-size: 1.2em;
+      font-weight: bold; }
+      nav select option {
+        font-size: 1em;
+        font-weight: bold; } }
 

@@ -213,6 +213,7 @@ body {
 
             #pagination {
                 margin: 0 auto;
+                display: flex;
 
                 a {
                     background-color: $yellow-color;
@@ -287,31 +288,30 @@ body {
 }
 
 
-
-select{
+select {
     display: none;
 }
 
 @media (max-width: 800px) {
-    nav ul {
-        display: none;
-    }
-
     nav {
         text-align: center;
-    }
 
-    nav select {
-        display: inline-block;
-        height: 2em;
-        border-radius: 10px;
-        background-color: $yellow-color;
-        font-size: 1.2em;
-        font-weight: bold;
+        ul {
+            display: none;
+        }
 
-        option {
-            font-size: 1em;
+        select {
+            display: inline-block;
+            height: 2em;
+            border-radius: 10px;
+            background-color: $yellow-color;
+            font-size: 1.2em;
             font-weight: bold;
+
+            option {
+                font-size: 1em;
+                font-weight: bold;
+            }
         }
     }
 }
