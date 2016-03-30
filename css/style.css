@@ -27,25 +27,25 @@ body {
     width: 95%;
     margin: auto;
     text-align: center; }
-    body #wrapper .nav-menu a {
+    body #wrapper .nav-menu li {
       display: inline-block;
-      color: black;
-      text-decoration: none;
-      font-size: 1.2em;
-      vertical-align: middle;
-      font-weight: bold; }
-      body #wrapper .nav-menu a li {
-        border: 1px solid black;
-        background-color: #f5f9af;
-        border-radius: 10px;
-        list-style: none;
-        padding: 1em 2em; }
-    body #wrapper .nav-menu a:hover {
+      border: 1px solid black;
+      background-color: #f5f9af;
+      border-radius: 10px;
+      list-style: none; }
+      body #wrapper .nav-menu li a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 2em; }
+    body #wrapper .nav-menu li:hover {
       box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
       cursor: pointer;
-      color: white; }
-      body #wrapper .nav-menu a:hover li {
-        background-color: #006fff; }
+      color: white;
+      background-color: #006fff; }
+      body #wrapper .nav-menu li:hover a {
+        color: #fff; }
   body #wrapper #container {
     width: 70%;
     margin: 0 auto;

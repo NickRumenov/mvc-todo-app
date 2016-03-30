@@ -90,30 +90,28 @@ body {
             margin: auto;
             text-align: center;
 
-            a {
+            li {
                 display: inline-block;
-                color: black;
-                text-decoration: none;
-                font-size: 1.2em;
-                vertical-align: middle;
-                font-weight: bold;
-
-                li {
-                    border: 1px solid black;
-                    background-color: $yellow-color;
-                    border-radius: 10px;
-                    list-style: none;
-                    padding: 1em 2em;
+                border: 1px solid black;
+                background-color: $yellow-color;
+                border-radius: 10px;
+                list-style: none;
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    padding: 2em;
                 }
             }
 
-            a:hover {
+            li:hover {
                 box-shadow: 10px 10px 7px rgba(0,0,0,.7);
                 cursor: pointer;
                 color: white;
-
-                li {
-                    background-color: $blue-buttons;
+                background-color: $blue-buttons;
+                a{
+                    color: #fff;
                 }
             }
         }
@@ -126,7 +124,7 @@ body {
             #home-page {
                 height: 30em;
 
-                p, h1{
+                p, h1 {
                     color: white;
                     text-align: center;
                 }
@@ -176,7 +174,7 @@ body {
                         font-weight: bold;
                     }
 
-                    .deadline, .author{
+                    .deadline, .author {
                         font-size: 1em;
                         position: fixed;
                         color: black;
@@ -205,7 +203,8 @@ body {
                         bottom: 0;
                     }
                 }
-                li:hover{
+
+                li:hover {
                     cursor: pointer;
                     background-color: $yellow-color;
                 }

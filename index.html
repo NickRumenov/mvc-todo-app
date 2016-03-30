@@ -19,11 +19,11 @@
         <nav id="menu">
             <h2 id="welcome-menu"></h2>
             <ul class="nav-menu" id="ul-menu">
-                <a href="#/home/"><li>Home</li></a>
-                <a href="#/my-tasks/"><li>My tasks</li></a>
-                <a href="#/office-tasks/"><li>Office tasks</li></a>
-                <a href="#/add-task/"><li>Add task</li></a>
-                <a href="#/logout/"><li>Logout</li></a>
+                <li><a href="#/home/">Home</a></li>
+                <li><a href="#/my-tasks/">My tasks</a></li>
+                <li><a href="#/office-tasks/">Office tasks</a></li>
+                <li><a href="#/add-task/">Add task</a></li>
+                <li><a href="#/logout/">Logout</a></li>
             </ul>
         </nav>
         <div id="container">
@@ -44,5 +44,25 @@
     <script src="js/controllers/taskController.js"></script>
 
     <script src="js/app.js"></script>
+    <script>
+	 $(function() {
+      $("<select />").appendTo("nav");
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Go to..."
+      }).appendTo("nav select");
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 });
+    </script>
 </body>
 </html>

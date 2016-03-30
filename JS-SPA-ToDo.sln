@@ -7,20 +7,21 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JS-SPA-ToDo", ".", "{64CD04
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_59781"
-		Debug.AspNetCompiler.PhysicalPath = "D:\Programming\GitHub\JS-SPA-ToDo\"
+		Debug.AspNetCompiler.PhysicalPath = "..\JS-SPA-ToDo\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59781\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_59781"
-		Release.AspNetCompiler.PhysicalPath = "D:\Programming\GitHub\JS-SPA-ToDo\"
+		Release.AspNetCompiler.PhysicalPath = "..\JS-SPA-ToDo\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59781\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "59781"
+		SlnRelativePath = "..\JS-SPA-ToDo\"
 	EndProjectSection
 EndProject
 Global
