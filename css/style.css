@@ -207,7 +207,8 @@ select {
       border-radius: 10px;
       background-color: #f5f9af;
       font-size: 1.2em;
-      font-weight: bold; }
+      font-weight: bold;
+      text-align: center; }
       nav select option {
         font-size: 1em;
         font-weight: bold; } }
