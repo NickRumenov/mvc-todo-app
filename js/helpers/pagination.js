@@ -15,10 +15,9 @@ app.pagination = (function () {
                 animation: style
             });
         });
+
         $("button").click(function () {
-
             var page = parseInt($("input").val());
-
             $("div.holder").jPages(page);
         });
     }
