@@ -195,12 +195,13 @@ body {
 select {
   display: none; }
 
-@media (max-width: 800px) {
+@media (max-width: 1040px) {
   nav {
     text-align: center; }
     nav ul {
       display: none; }
     nav select {
+      width: 10em;
       display: inline-block;
       height: 2em;
       border-radius: 10px;
