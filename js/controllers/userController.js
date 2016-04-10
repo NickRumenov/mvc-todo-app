@@ -31,8 +31,8 @@ app.userController = (function () {
     };
 
     UserController.prototype.register = function (data) {
-        return this.model.register(data)
-            .then(function (success) {
+        if ((data.username && data.password) && (data.password === data.repeatPassword)) {
+            return this.model.register(data).then(function (success) {
                 sessionStorage['sessionId'] = success._kmd.authtoken;
                 sessionStorage['username'] = success.username;
                 sessionStorage['userId'] = success._id;
@@ -41,6 +41,20 @@ app.userController = (function () {
                     this.trigger('redirectUrl', { url: '#/home/' });
                 });
             });
+        } else {
+            if (!data.username && !data.password) {
+                alert('Please insert username and password.');
+            }
+            else if (!data.username) {
+                alert('Please insert username.');
+            }
+            else if (!data.password) {
+                alert('Please insert password.');
+            }
+            else if (data.password !== data.repeatPassword) {
+                alert('Passwords are not equal.');
+            }
+        }
     };
 
     UserController.prototype.logout = function () {
